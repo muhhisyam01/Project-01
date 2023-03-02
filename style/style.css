@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitter', Times;
+    scroll-behavior: smooth;
+
+    
+}
+#header{
+  background-color: #ff7f00;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  transition: top .3s ease;
+}
+#hero.show{
+    top: -70px;
+  }
+
+
+body {
+    margin-top: 64px;
+    padding-bottom: 50px;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px #ff7f00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-right a {
+    font-weight: 500;
+    width: 150px;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+.text-logo {
+    font-weight: 900;
+    font-size: 20px;
+    color: #ff7f00;
+}
+
+#hero {
+    display: flex;
+    padding: 50px;
+    margin-right: 50px;
+    
+    background-color: #ff7f00;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  transition: top .3s ease;
+}
+
+#hero-left {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-title {
+    margin-bottom: 40px;
+    font-size: 3.5em;
+}
+
+#hero-left p {
+    line-height: 30px;
+}
+
+.cta-container {
+    display: flex;
+}
+
+.cta-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 40px;
+    width: 200px;
+    box-shadow: 1px 1px 5px #444444;
+    cursor: pointer;
+}
+
+.cta-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.btn-green {
+    background-color: #ff7f00;
+}
+
+.btn-gray {
+    background-color: #444444;
+}
+
+#hero-right {
+    /* background-color: rgb(230, 126, 34, .7); */
+    /* box-shadow: 5px 5px 15px black; */
+    border-radius: 30%;
+    padding-top: 40px;
+    padding-left: 200px;
+}
+
+#hero-right img {
+    width: 60%;
+    border-radius: 10%;
+    padding-left: 80px;
+}
+
+#about {
+    padding: 80px 50px;
+}
+
+.about-title-box {
+    display: flex;
+    justify-content: center;
+}
+
+.about-title {
+    text-align: center;
+    margin: 40px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff7f00;
+}
+
+.card-about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-box h2 {
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    line-height: 26px;
+}
+
+.btn-about {
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 1px 1px 5px #444444;
+    margin-top: 20px;
+}
+
+.about-img-box {
+    width: 40%;
+}
+
+.about-img {
+    border-radius: 30px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 1px 1px 5px #444444;
+}
+
+.card-about:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.about-right .about-box {
+    order: 2;
+}
+
+.about-right .about-img-box {
+    order: 1;
+}
+
+#signature-menu {
+    padding: 50px 100px;
+}
+
+.signature-title-box {
+    display: flex;
+    justify-content: center;
+}
+
+.signature-title {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff7f00;
+}
+
+.signature-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-menu {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.img-menu {
+    background-color: rgb(230, 126, 34, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    height: 300px;
+}
+
+.img-menu img {
+    width: 200px;
+}
+
+.card-menu:not(:last-child) {
+    margin-right: 40px;
+}
+
+.menu-info h4 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu-info p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+#contact {
+    height: 600px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    padding: 20px 40px;
+    background: linear-gradient(90deg, rgba(68,68,68,.9) 50%,rgba(230, 126, 34, .7) 50%);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.form-info {
+    margin-right: 40px;
+}
+
+.input-box {
+    display: flex;
+}
+
+.form input {
+    padding: 10px;
+    border: none;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+@media screen and (max-width: 768px){
+    .nav-right a {
+        width: auto;
+    }
+    .nav-right a:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+    #hero {
+        padding: 40px;
+    }
+    #hero-left {
+        padding-left: 0;
+        width: 100%;
+    }
+    #hero-right {
+        display: none;
+    }
+    #about {
+        padding: 50px 40px;
+    }
+    .card-about {
+        flex-direction: column;
+    }
+    .about-box {
+        order: 2;
+        width: 100%;
+    }
+    .about-img-box {
+        order: 1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-box p {
+        text-align: justify;
+    }
+    .signature-container {
+        flex-wrap: wrap;
+    }
+    #signature-menu {
+        padding: 50px;
+    }
+
+    .card-menu:not(:last-child) {
+        margin: 0 40px;
+    }
+
+    #contact {
+        height: 200px;
+        padding: 0 40px;
+    }
+
+    .form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-right {
+        margin-top: 20px;
+    }
+    #hero {
+        margin-right: 0;
+    }
+    .hero-title {
+        margin-top: 40px;
+        font-size: 2em;
+    }
+    #hero-left p {
+        text-align: justify;
+    }
+
+    #contact {
+        padding: 40px;
+    }
+}
+
